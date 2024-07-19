@@ -66,3 +66,30 @@ fi
 ```
 
 Save, close and open again the Git Bash. The ZSH should be executed automatically.
+
+### 6 - Oh My Posh installation
+
+Open PowerShell and run the command:
+
+```
+winget install JanDeDobbeleer.OhMyPosh -s winget
+```
+
+After running the command and getting a successful installation, close the terminal.
+
+
+### 6 - Nerd Font installation
+
+Open Windows Terminal **as administrator** to start installing the font from the [NERD FONTS repository](https://ohmyposh.dev/docs/installation/fonts) and execute the command:
+
+```
+oh-my-posh font install
+```
+
+Select the font Hack like is shown in the image below:
+
+![nerd-font-install](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/nerd-font-install.png)
+
+To test the installation, open a new PowerShell (without admin) and go to Settings -> Windows PowerShell -> Appearance like is shown in the image below:
+
+![nerd-font-install](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/powershell-font.gif)
