@@ -196,7 +196,7 @@ Note que o cominho especificado após a flag `--config` é o mesmo caminho espec
 
 When using Visual Studio Code, you will need to configure the integrated Terminal to make use of the Nerd Font as well. This can be done by changing the `Integrated: Font Family` value in the Terminal settings, default shortcut: `CTRL + ,` and search for `Integrated: Font Family` or via `File` -> `Preferences` -> `Settings` and search for `Integrated: Font Family` like is shown in the image below:
 
-![vs-code-nerd-fonts](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/vs-code-nerd-fontst.gif)
+![vs-code-nerd-fonts](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/vs-code-nerd-fonts.gif)
 
 Close VS Code e open again. The theme icons must be enabled in the terminal
 
