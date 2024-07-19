@@ -1,5 +1,15 @@
 <h1 align="center">Pretty Terminal in Windows</h1>
 
+<p align="center">
+    This repository was developed to help configure and customize Windows terminals, where Windows PowerShell and Git Bash are configured.
+</p>
+
+<p align="center">
+    <a href="https://github.com/Vinicius999/pretty-terminal-windows#main-programs">Main programs</a> |
+    <a href="https://github.com/Vinicius999/pretty-terminal-windows#step-by-step">Step-by-step</a> |
+</p>
+
+
 ## Main programs 
 
 <p style='margin: 20px 4px 32px;'>
@@ -188,9 +198,10 @@ When using Visual Studio Code, you will need to configure the integrated Termina
 
 ![vs-code-nerd-fonts](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/vs-code-nerd-fontst.gif)
 
-Close VS Code e open again. The icons must be enabled in the terminal
+Close VS Code e open again. The theme icons must be enabled in the terminal
 
-### 12 - References and documentatio
+### 12 - References and documentation
+
 Explore options and other topics in the documentation.
 - ZSH official site: https://www.zsh.org/
 - Oh My Posh Documentation: https://ohmyposh.dev/docs
