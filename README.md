@@ -21,17 +21,24 @@ The correct file to download is shown in the image below:
 
 ![zsh-download](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/link-download-zsh.png)
 
+The name of the downloaded file should look like `zsh-5.9-2-x86_64.pkg.tar.zst`.
+
 
 ### 2 - Download and install PeaZip
 
-Sownload PeaZip from the link: [download-peazip](https://peazip.github.io/index.html)
+Download PeaZip from the link: [download-peazip](https://peazip.github.io/index.html)
 
-PeaZip is used to extract the `.ZST` files, like the current ZSH file.
+PeaZip is used to extract the `.ZST` files, like the ZSH packege downloaded before.
 
 
-### 3 - Extract the ZSH file to your git bash installation dir 
+### 3 - Extract the ZSH file to your git bash installation dir
 
-Go to your git bash installation dir. Usually `C:\Program Files\Git`
+Move the `zsh-5.9-2-x86_64.pkg.tar.zst` file to git bash installation dir, usually the path is `C:\Program Files\Git`, like is shown in the image below:
 
-Extract the content to your git bash installation dir. Usually `C:\Program Files\Git`
+![git-installation-dir](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/git-installation-dir.png)
 
+Extract the file using PeaZip like is shown in the image below:
+
+![extract-zsh-peazip](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/extract-zsh-peazip.png)
+
+Will be extracted a file that looks like `zsh-5.9-2-x86_64.pkg.tar` with `.TAZ` extention. You should extract it in the same way as the initial file.
