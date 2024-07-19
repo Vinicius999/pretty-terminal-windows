@@ -42,3 +42,27 @@ Extract the file using PeaZip like is shown in the image below:
 ![extract-zsh-peazip](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/extract-zsh-peazip.png)
 
 Will be extracted a file that looks like `zsh-5.9-2-x86_64.pkg.tar` with `.TAZ` extention. You should extract it in the same way as the initial file.
+
+### 4 - Testing ZSH
+
+Open Git Bash and execute the command:
+```
+zsh
+```
+
+### 5 - Setting zsh as the default
+
+To make sure that **zsh** will run every time you open Git Bash, look in Windows Explorer for the `.bashrc` file and open it with **VS Code** like is shown in the image below:
+
+![extract-zsh-peazip](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/bashrc-file.png)
+
+Add the following lines at the end of the file:
+
+```
+# Launch Zsh
+if [ -t 1 ]; then
+    exec zsh
+fi
+```
+
+Save, close and open again the Git Bash. The ZSH should be executed automatically.
