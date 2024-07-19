@@ -143,7 +143,7 @@ Open a new PowerShel (without admin) reload your profile for the changes to take
 . $PROFILE
 ```
 
-### 10 - Setting up a Oh My Posh theme
+### 10 - Setting up Oh My Posh theme in PowerShell
 
 To configure a theme, run the command below to list all available themes.
 
@@ -167,3 +167,30 @@ To test a new theme, copy the name of the theme as shown below and replace it in
 oh-my-posh init pwsh --config 'C:\Users\<USER_NAME>\AppData\Local\Programs\oh-my-posh\themes\<THEME-NAME>.omp.json' | Invoke-Expression
 ```
 
+### 11 - Setting up Oh My Posh theme in Git Bash
+
+Search for the .zshrc file in Windows Explorer. It's usually in the path C:\Users\<USER-NAME>
+
+Open the file with VS Code and add the following commands to the end of the file:
+
+```
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+  eval "$(oh-my-posh init zsh --config C:/Users/<USER-NAME>/AppData/Local/Programs/oh-my-posh/themes/blue-owl.omp.json)"
+fi
+```
+
+Note que o cominho especificado após a flag `--config` é o mesmo caminho especificado no comando para configurar um tema no PowerShell.
+
+
+### 11 - Setting up Nerd FOnts in Visual Studio Code
+
+When using Visual Studio Code, you will need to configure the integrated Terminal to make use of the Nerd Font as well. This can be done by changing the `Integrated: Font Family` value in the Terminal settings, default shortcut: `CTRL + ,` and search for `Integrated: Font Family` or via `File` -> `Preferences` -> `Settings` and search for `Integrated: Font Family` like is shown in the image below:
+
+![vs-code-nerd-fonts](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/vs-code-nerd-fontst.gif)
+
+Close VS Code e open again. The icons must be enabled in the terminal
+
+### 12 - References and documentatio
+Explore options and other topics in the documentation.
+- ZSH official site: https://www.zsh.org/
+- Oh My Posh Documentation: https://ohmyposh.dev/docs
