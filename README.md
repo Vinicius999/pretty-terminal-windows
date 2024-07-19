@@ -93,3 +93,77 @@ Select the font Hack like is shown in the image below:
 To test the installation, open a new PowerShell (without admin) and go to Settings -> Windows PowerShell -> Appearance like is shown in the image below:
 
 ![nerd-font-install](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/powershell-font.gif)
+
+Select `Hack Nerd Font` Save and close the terminal.
+
+
+### 7 - Creating a PowerShell profile
+
+Open a new terminal as administrator and run the command below to confirm which Shell is in use.
+
+```
+oh-my-posh get shell
+```
+
+Try editing your PowerShell profile script using the first command below. If you get an error, run the second command.
+
+```
+notepad $PROFILE
+```
+
+```
+New-Item -Path $PROFILE -Type File -Force
+```
+
+The file will be created in the following path `C:\Users\<USER-NAME>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`.
+
+### 8 - Allowing local scripst
+
+Allow the execution of local scripsts and request that only remote scripsts be signed:
+
+```
+Set-ExecutionPolicy RemoteSigned
+```
+
+Open the file `C:\Users\<USER-NAME>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1` using the command:
+
+```
+notepad $PROFILE
+```
+
+Add the following line to the file and save:
+
+```
+oh-my-posh init pwsh | Invoke-Expression
+```
+
+Open a new PowerShel (without admin) reload your profile for the changes to take effect.
+
+```
+. $PROFILE
+```
+
+### 9 - Setting up a Oh My Posh theme
+
+To configure a theme, run the command below to list all available themes.
+
+```
+Get-PoshThemes
+```
+
+All themes can also be viewed on the [themes page](https://ohmyposh.dev/docs/themes) of the Oh My Posh documentation: [`https://ohmyposh.dev/docs/themes`](https://ohmyposh.dev/docs/themes).
+
+Open the profile configuration file again (`C:\Users\<USER-NAME>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`) and paste the example command changing to your chosen theme. No exemplo abaixo, o tema escolhido foi o [blue-owl](https://ohmyposh.dev/docs/themes#blue-owl):
+
+```
+oh-my-posh init pwsh --config 'C:\Users\<USER_NAME>\AppData\Local\Programs\oh-my-posh\themes\blue-owl.omp.json' | Invoke-Expression
+```
+
+To test a new theme, copy the name of the theme as shown below and replace it in the command below.
+
+![nerd-font-install](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/powershell-font.gif)
+
+```
+oh-my-posh init pwsh --config 'C:\Users\<USER_NAME>\AppData\Local\Programs\oh-my-posh\themes\<THEME-NAME>.omp.json' | Invoke-Expression
+```
+
