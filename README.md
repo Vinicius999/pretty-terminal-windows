@@ -78,7 +78,7 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 After running the command and getting a successful installation, close the terminal.
 
 
-### 6 - Nerd Font installation
+### 7 - Nerd Font installation
 
 Open Windows Terminal **as administrator** to start installing the font from the [NERD FONTS repository](https://ohmyposh.dev/docs/installation/fonts) and execute the command:
 
@@ -97,7 +97,7 @@ To test the installation, open a new PowerShell (without admin) and go to Settin
 Select `Hack Nerd Font` Save and close the terminal.
 
 
-### 7 - Creating a PowerShell profile
+### 8 - Creating a PowerShell profile
 
 Open a new terminal as administrator and run the command below to confirm which Shell is in use.
 
@@ -117,7 +117,7 @@ New-Item -Path $PROFILE -Type File -Force
 
 The file will be created in the following path `C:\Users\<USER-NAME>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`.
 
-### 8 - Allowing local scripst
+### 9 - Allowing local scripst
 
 Allow the execution of local scripsts and request that only remote scripsts be signed:
 
@@ -143,7 +143,7 @@ Open a new PowerShel (without admin) reload your profile for the changes to take
 . $PROFILE
 ```
 
-### 9 - Setting up a Oh My Posh theme
+### 10 - Setting up a Oh My Posh theme
 
 To configure a theme, run the command below to list all available themes.
 
@@ -161,7 +161,7 @@ oh-my-posh init pwsh --config 'C:\Users\<USER_NAME>\AppData\Local\Programs\oh-my
 
 To test a new theme, copy the name of the theme as shown below and replace it in the command below.
 
-![nerd-font-install](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/powershell-font.gif)
+![blue-owl-theme](https://github.com/Vinicius999/pretty-terminal-windows/blob/main/images/blue-owl-theme.png)
 
 ```
 oh-my-posh init pwsh --config 'C:\Users\<USER_NAME>\AppData\Local\Programs\oh-my-posh\themes\<THEME-NAME>.omp.json' | Invoke-Expression
